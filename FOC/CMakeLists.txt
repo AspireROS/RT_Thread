@@ -8,7 +8,7 @@ SET(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 SET(CMAKE_C_COMPILER "C:/RT-ThreadStudio/repo/Extract/ToolChain_Support_Packages/RISC-V/RISC-V-GCC-RV32/2022-04-12/bin/riscv32-unknown-elf-gcc.exe")
 SET(CMAKE_ASM_COMPILER "C:/RT-ThreadStudio/repo/Extract/ToolChain_Support_Packages/RISC-V/RISC-V-GCC-RV32/2022-04-12/bin/riscv32-unknown-elf-gcc.exe")
-SET(CMAKE_C_FLAGS "")
+SET(CMAKE_C_FLAGS " -mcmodel=medlow -march=rv32imac -mabi=ilp32  -DUSE_NONVECTOR_MODE=1  -DCONFIG_NDEBUG_CONSOLE=1  -ffunction-sections -fdata-sections -fno-common -fno-omit-frame-pointer -gdwarf-2 -Og")
 SET(CMAKE_ASM_FLAGS " -mcmodel=medlow -march=rv32imac -mabi=ilp32  -DUSE_NONVECTOR_MODE=1  -DCONFIG_NDEBUG_CONSOLE=1  -ffunction-sections -fdata-sections -fno-common -fno-omit-frame-pointer -gdwarf-2 -I C:/RT-ThreadStudio/workspace/FOC/rt-thread/libcpu/risc-v/common")
 SET(CMAKE_C_COMPILER_WORKS TRUE)
 
@@ -73,6 +73,8 @@ ADD_DEFINITIONS(
 	-DHPM_SDK_L1C_NO_REENTRANT=1
 	-DUSE_DMA_DECLARE_EXT_ISR_M=1
 	-DHPMSOC_HAS_HPMSDK_DMAV2
+	-DHPMSOC_HAS_HPMSDK_GPTMR
+	-DHPMSOC_HAS_HPMSDK_I2C
 	-DHPM_SOC_ISR_NUM=80
 	-DRT_HW_ISR_NUM=HPM_SOC_ISR_NUM
 	-D__RTTHREAD__
@@ -179,6 +181,8 @@ SET(RT_LIBRARIES_SOURCES
 	libraries/hpm_sdk/drivers/src/hpm_adc16_drv.c
 	libraries/hpm_sdk/drivers/src/hpm_dmav2_drv.c
 	libraries/hpm_sdk/drivers/src/hpm_gpio_drv.c
+	libraries/hpm_sdk/drivers/src/hpm_gptmr_drv.c
+	libraries/hpm_sdk/drivers/src/hpm_i2c_drv.c
 	libraries/hpm_sdk/drivers/src/hpm_pcfg_drv.c
 	libraries/hpm_sdk/drivers/src/hpm_pllctlv2_drv.c
 	libraries/hpm_sdk/drivers/src/hpm_pmp_drv.c
