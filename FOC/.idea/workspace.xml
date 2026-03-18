@@ -42,8 +42,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="完成了adc的创建及开发">
-      <change afterPath="$PROJECT_DIR$/applications/Inc/hpm_can.h" afterDir="false" />
+    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="完成了CAN的初始化">
+      <change afterPath="$PROJECT_DIR$/applications/Inc/hpm_pwm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/Src/hpm_pwm.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
@@ -60,9 +61,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "history": [
+    {
+      "state": "OPEN",
+      "sort": "NEWEST"
+    }
+  ],
   "lastFilter": {
     "state": "OPEN",
-    "assignee": "AspireROS"
+    "sort": "NEWEST"
   }
 }]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
@@ -233,7 +240,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773829586142</updated>
-      <workItem from="1773829590591" duration="2569000" />
+      <workItem from="1773829590591" duration="3480000" />
     </task>
     <task id="LOCAL-00001" summary="clion开发">
       <option name="closed" value="true" />
@@ -259,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773831836251</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成了CAN的初始化">
+      <option name="closed" value="true" />
+      <created>1773832329508</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773832329508</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +290,7 @@
     <MESSAGE value="clion开发" />
     <MESSAGE value="ai修改了CMake文件，修复了报错" />
     <MESSAGE value="完成了adc的创建及开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了adc的创建及开发" />
+    <MESSAGE value="完成了CAN的初始化" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了CAN的初始化" />
   </component>
 </project>
