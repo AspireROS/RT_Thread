@@ -88,6 +88,8 @@ SET(RT_APPLICATIONS_SOURCES
 	applications/main.c
 		applications/Inc/hpm_adc.h
 		applications/Src/hpm_adc.c
+		applications/Inc/hpm_can.h
+		applications/Src/hpm_can.c
 )
 
 SET(RT_BOARD_SOURCES

@@ -42,11 +42,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="ai修改了CMake文件，修复了报错">
-      <change afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/Inc/hpm_adc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/Src/hpm_adc.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../adc_example/.idea/adc_example.iml" afterDir="false" />
+    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="完成了adc的创建及开发">
+      <change afterPath="$PROJECT_DIR$/applications/Inc/hpm_can.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
@@ -236,7 +233,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773829586142</updated>
-      <workItem from="1773829590591" duration="2137000" />
+      <workItem from="1773829590591" duration="2569000" />
     </task>
     <task id="LOCAL-00001" summary="clion开发">
       <option name="closed" value="true" />
@@ -254,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773831251362</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成了adc的创建及开发">
+      <option name="closed" value="true" />
+      <created>1773831836251</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773831836251</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +274,7 @@
     <MESSAGE value="FOC创建" />
     <MESSAGE value="clion开发" />
     <MESSAGE value="ai修改了CMake文件，修复了报错" />
-    <option name="LAST_COMMIT_MESSAGE" value="ai修改了CMake文件，修复了报错" />
+    <MESSAGE value="完成了adc的创建及开发" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了adc的创建及开发" />
   </component>
 </project>
