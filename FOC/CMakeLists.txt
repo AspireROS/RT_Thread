@@ -86,6 +86,8 @@ ADD_DEFINITIONS(
 # Library source files
 SET(RT_APPLICATIONS_SOURCES
 	applications/main.c
+		applications/Inc/hpm_adc.h
+		applications/Src/hpm_adc.c
 )
 
 SET(RT_BOARD_SOURCES

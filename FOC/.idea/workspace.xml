@@ -42,7 +42,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="clion开发">
+    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="ai修改了CMake文件，修复了报错">
+      <change afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/Inc/hpm_adc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/applications/Src/hpm_adc.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../adc_example/.idea/adc_example.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +102,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -230,7 +236,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773829586142</updated>
-      <workItem from="1773829590591" duration="1586000" />
+      <workItem from="1773829590591" duration="2137000" />
     </task>
     <task id="LOCAL-00001" summary="clion开发">
       <option name="closed" value="true" />
@@ -240,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773830110885</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ai修改了CMake文件，修复了报错">
+      <option name="closed" value="true" />
+      <created>1773831251362</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773831251362</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +268,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="FOC创建" />
     <MESSAGE value="clion开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="clion开发" />
+    <MESSAGE value="ai修改了CMake文件，修复了报错" />
+    <option name="LAST_COMMIT_MESSAGE" value="ai修改了CMake文件，修复了报错" />
   </component>
 </project>
