@@ -224,7 +224,22 @@
 #define BOARD_APP_ADC16_NAME     "ADC0"
 #define BOARD_APP_ADC16_BASE     HPM_ADC0
 #define BOARD_APP_ADC16_IRQn     IRQn_ADC0
+#define BOARD_APP_ADC16_CH_0     (0U)
 #define BOARD_APP_ADC16_CH_1     (1U)
+#define BOARD_APP_ADC16_CH_2     (2U)
+#define BOARD_APP_ADC16_CH_3     (3U)
+#define BOARD_APP_ADC16_CH_4     (4U)
+#define BOARD_APP_ADC16_CH_5     (5U)
+#define BOARD_APP_ADC16_CH_6     (6U)
+#define BOARD_APP_ADC16_CH_7     (7U)
+#define BOARD_APP_ADC16_CH_8     (8U)
+#define BOARD_APP_ADC16_CH_9     (9U)
+#define BOARD_APP_ADC16_CH_10     (10U)
+#define BOARD_APP_ADC16_CH_11     (11U)
+#define BOARD_APP_ADC16_CH_12     (12U)
+#define BOARD_APP_ADC16_CH_13     (13U)
+#define BOARD_APP_ADC16_CH_14     (14U)
+#define BOARD_APP_ADC16_CH_15     (15U)
 #define BOARD_APP_ADC16_CLK_NAME (clock_adc0)
 #define BOARD_APP_ADC16_CLK_BUS  (clk_adc_src_ahb0)
 

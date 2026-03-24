@@ -15,7 +15,8 @@
 /* ADC Preemption Mode Result Buffer
  * 必须按照 L1 Cache Line 对齐，防止 Cache 一致性问题 (如果开启了 Cache)
  */
-adc16_pmt_dma_data_t pmt_result_buff[ADC_SOC_PMT_MAX_DMA_BUFF_LEN_IN_4BYTES] __attribute__((aligned(HPM_L1C_CACHELINE_SIZE)));
+adc16_pmt_dma_data_t pmt_result_buff[ADC_SOC_PMT_MAX_DMA_BUFF_LEN_IN_4BYTES] __attribute__((aligned(
+    HPM_L1C_CACHELINE_SIZE)));
 
 /**
  * @brief ADC0 中断处理函数
@@ -28,7 +29,7 @@ void isr_adc0(void) {
 
         /* 强制 Cache 失效，确保从系统内存读取到 DMA 搬运的最新数据 */
         if (l1c_dc_is_enabled()) {
-            l1c_dc_invalidate((uint32_t)pmt_result_buff, sizeof(pmt_result_buff));
+            l1c_dc_invalidate((uint32_t) pmt_result_buff, sizeof(pmt_result_buff));
         }
 
         /*
@@ -38,6 +39,7 @@ void isr_adc0(void) {
          */
     }
 }
+
 SDK_DECLARE_EXT_ISR_M(IRQn_ADC0, isr_adc0)
 
 void hpm_adc_gpio_init(void) {
@@ -65,13 +67,13 @@ void hpm_adc_pmt_init(uint8_t ch1, uint8_t ch2) {
 
     /* 3. 配置 PMT DMA 地址 */
     /* 将本地地址转换为系统地址，供 DMA 使用 */
-    uint32_t dma_addr = core_local_mem_to_sys_address(BOARD_RUNNING_CORE, (uint32_t)pmt_result_buff);
+    uint32_t dma_addr = core_local_mem_to_sys_address(BOARD_RUNNING_CORE, (uint32_t) pmt_result_buff);
     adc16_init_pmt_dma(HPM_ADC0, dma_addr);
 
     /* 4. 配置抢占触发队列 */
     adc16_pmt_config_t pmt_cfg = {0};
-    pmt_cfg.trig_ch = 0;    /* 对应 PTRGI0A */
-    pmt_cfg.trig_len = 2;   /* 瞬间连采双通道 */
+    pmt_cfg.trig_ch = 0; /* 对应 PTRGI0A */
+    pmt_cfg.trig_len = 2; /* 瞬间连采双通道 */
     pmt_cfg.adc_ch[0] = ch1;
     pmt_cfg.adc_ch[1] = ch2;
     pmt_cfg.inten[0] = false;

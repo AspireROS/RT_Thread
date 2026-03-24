@@ -14,23 +14,16 @@
 #include <rtthread.h>
 #include <rtdevice.h>
 #include "rtt_board.h"
-#ifdef BSP_USING_ADC12
-#include "hpm_adc12_drv.h"
-#endif
+// #include "./drivers/Inc/hpm_adc.h"
 #ifdef BSP_USING_ADC16
 #include "hpm_adc16_drv.h"
 #endif
 
 void thread_entry(void *arg);
 
-#define ADC_DEV_NAME        BOARD_ADC_NAME
-#define ADC_DEV_CHANNEL     BOARD_ADC_CHANNEL
 #define REFER_VOLTAGE       330 /*3.3v*/
 #ifdef BSP_USING_ADC16
 #define CONVERT_BITS        (1 << 16) /*16 bit*/
-#endif
-#ifdef BSP_USING_ADC12
-#define CONVERT_BITS        (1 << 12) /*16 bit*/
 #endif
 
 static void str_to_lower(char *str);
@@ -43,7 +36,7 @@ int main(void)
 
 void thread_entry(void *arg)
 {
-    char adc_dev_name[] = ADC_DEV_NAME;
+    char adc_dev_name[] = BOARD_APP_ADC16_NAME;
     rt_uint32_t round = 0;
     rt_adc_device_t adc_dev;
     rt_uint32_t value, vol;
@@ -54,11 +47,27 @@ void thread_entry(void *arg)
         rt_kprintf("adc sample run failed! can't find %s device!\n", adc_dev_name);
     }
     /* enable device */
-    ret = rt_adc_enable(adc_dev, ADC_DEV_CHANNEL);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_0);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_1);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_2);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_3);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_4);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_5);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_6);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_7);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_8);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_9);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_10);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_11);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_12);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_13);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_14);
+    ret = rt_adc_enable(adc_dev, BOARD_APP_ADC16_CH_15);
+
     while (1) {
         rt_kprintf("\n-----------------Oneshot read #%4d-----------------\n", ++round);
         /* read channel */
-        value = rt_adc_read(adc_dev, ADC_DEV_CHANNEL);
+        value = rt_adc_read(adc_dev, BOARD_APP_ADC16_CH_0);
         rt_kprintf("the value is :%d \n", value);
         /* conversion */
         vol = value * REFER_VOLTAGE / CONVERT_BITS;

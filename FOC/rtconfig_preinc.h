@@ -6,7 +6,7 @@
 /* RT-Thread pre-include file */
 
 #define D45
-#define HPM5E31
+#define HPM5E3Y
 #define HPMSOC_HAS_HPMSDK_DMAV2
 #define HPM_SDK_L1C_NO_REENTRANT 1
 #define HPM_SOC_ISR_NUM 80

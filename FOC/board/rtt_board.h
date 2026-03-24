@@ -29,7 +29,8 @@
 #define BOARD_OS_TIMER_CLK_NAME (clock_gptmr0)
 
 /* CAN section */
-#define BOARD_CAN_NAME                        "can1"
+#define BOARD_CAN0_NAME                        "can0"
+#define BOARD_CAN1_NAME                        "can1"
 #define BOARD_CAN_HWFILTER_INDEX               (1U)
 
 /* UART section */
@@ -37,8 +38,16 @@
 #define BOARD_UART_RX_BUFFER_SIZE              BSP_UART4_RX_BUFSIZE
 
 /* PWM section */
-#define BOARD_PWM_NAME                        "pwm0"
-#define BOARD_PWM_CHANNEL                     (0U)
+#define BOARD_PWM0                             "pwm0"
+#define BOARD_PWM1                             "pwm1"
+#define BOARD_PWM_CHANNEL0                     (0U)
+#define BOARD_PWM_CHANNEL1                     (1U)
+#define BOARD_PWM_CHANNEL2                     (2U)
+#define BOARD_PWM_CHANNEL3                     (3U)
+#define BOARD_PWM_CHANNEL4                     (4U)
+#define BOARD_PWM_CHANNEL5                     (5U)
+#define BOARD_PWM_CHANNEL6                     (6U)
+#define BOARD_PWM_CHANNEL7                     (7U)
 
 /* ADC section */
 #define BOARD_ADC_NAME                        BOARD_APP_ADC16_NAME

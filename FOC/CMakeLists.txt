@@ -86,12 +86,36 @@ ADD_DEFINITIONS(
 # Library source files
 SET(RT_APPLICATIONS_SOURCES
 	applications/main.c
-		applications/Inc/hpm_adc.h
-		applications/Src/hpm_adc.c
-		applications/Inc/hpm_can.h
-		applications/Src/hpm_can.c
-		applications/Inc/hpm_pwm.h
-		applications/Src/hpm_pwm.c
+		drivers/Inc/hpm_adc.h
+		drivers/Src/hpm_adc.c
+		drivers/Inc/hpm_can.h
+		drivers/Src/hpm_can.c
+		drivers/Inc/hpm_pwm.h
+		drivers/Src/hpm_pwm.c
+		foc/Inc/hpm_foc.h
+		foc/Src/hpm_foc.c
+		foc/Inc/hpm_clarke.h
+		foc/Src/hpm_clarke.c
+		foc/Inc/hpm_park.h
+		foc/Src/hpm_park.c
+		foc/Inc/hpm_svpwm.h
+		foc/Src/hpm_svpwm.c
+		foc/Inc/hpm_pid.h
+		foc/Src/hpm_pid.c
+		foc/Inc/hpm_motor.h
+		foc/Src/hpm_motor.c
+		applications/Inc/hpm_foc_thread.h
+		applications/Src/hpm_foc_thread.c
+		applications/Inc/hpm_command_thread.h
+		applications/Src/hpm_command_thread.c
+		drivers/Inc/hpm_encoder.h
+		drivers/Src/hpm_encoder.c
+		drivers/Inc/hpm_rs485.h
+		drivers/Src/hpm_rs485.c
+		drivers/Inc/hpm_esc.h
+		drivers/Src/hpm_protect.c
+		drivers/Inc/hpm_protect.h
+		drivers/Src/hpm_esc.c
 )
 
 SET(RT_BOARD_SOURCES

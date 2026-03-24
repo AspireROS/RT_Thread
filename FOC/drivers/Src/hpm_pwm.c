@@ -1,4 +1,4 @@
-#include "../inc/hpm_pwm.h"
+#include "../Inc/hpm_pwm.h"
 #include <rtthread.h>
 #include "hpm_gpio_drv.h"
 #include "hpm_pwmv2_drv.h"
