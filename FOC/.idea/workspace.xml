@@ -45,43 +45,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="完成了PWM的创建">
-      <change afterPath="$PROJECT_DIR$/applications/Inc/hpm_command_thread.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/Inc/hpm_foc_thread.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/Src/hpm_command_thread.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/applications/Src/hpm_foc_thread.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/Inc/hpm_encoder.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/Inc/hpm_esc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/Inc/hpm_protect.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/Inc/hpm_rs485.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/Src/hpm_encoder.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/Src/hpm_protect.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/drivers/Src/hpm_rs485.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Inc/hpm_clarke.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Inc/hpm_foc.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Inc/hpm_motor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Inc/hpm_park.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Inc/hpm_pid.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Inc/hpm_svpwm.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Src/hpm_clarke.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Src/hpm_foc.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Src/hpm_motor.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Src/hpm_park.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Src/hpm_pid.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/foc/Src/hpm_svpwm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="完成了整体结构的创建">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/Inc/hpm_adc.h" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Inc/hpm_adc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/Inc/hpm_can.h" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Inc/hpm_can.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/Inc/hpm_pwm.h" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Inc/hpm_pwm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/Src/hpm_adc.c" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Src/hpm_adc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/Src/hpm_can.c" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Src/hpm_can.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/Src/hpm_pwm.c" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Src/hpm_pwm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/applications/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/board.h" beforeDir="false" afterPath="$PROJECT_DIR$/board/board.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/board/rtt_board.h" beforeDir="false" afterPath="$PROJECT_DIR$/board/rtt_board.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rtconfig_preinc.h" beforeDir="false" afterPath="$PROJECT_DIR$/rtconfig_preinc.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,7 +264,7 @@
       <workItem from="1774177522384" duration="1889000" />
       <workItem from="1774190720146" duration="1645000" />
       <workItem from="1774317874288" duration="7000" />
-      <workItem from="1774318432876" duration="2239000" />
+      <workItem from="1774318432876" duration="4130000" />
     </task>
     <task id="LOCAL-00001" summary="clion开发">
       <option name="closed" value="true" />
@@ -347,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773833197601</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="完成了整体结构的创建">
+      <option name="closed" value="true" />
+      <created>1774320792285</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1774320792285</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +340,7 @@
     <MESSAGE value="完成了adc的创建及开发" />
     <MESSAGE value="完成了CAN的初始化" />
     <MESSAGE value="完成了PWM的创建" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了PWM的创建" />
+    <MESSAGE value="完成了整体结构的创建" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了整体结构的创建" />
   </component>
 </project>
