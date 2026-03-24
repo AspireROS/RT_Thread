@@ -218,6 +218,8 @@ SET(RT_LIBRARIES_SOURCES
 	libraries/hpm_sdk/drivers/src/hpm_pmp_drv.c
 	libraries/hpm_sdk/drivers/src/hpm_uart_drv.c
 	libraries/hpm_sdk/drivers/src/hpm_spi_drv.c
+	libraries/hpm_sdk/drivers/src/hpm_qeiv2_drv.c
+	libraries/hpm_sdk/drivers/src/hpm_pwmv2_drv.c
 	libraries/hpm_sdk/utils/hpm_sbrk.c
 )
 

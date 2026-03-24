@@ -45,31 +45,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="项目说明">
+    <list default="true" id="33779973-fd48-435c-b3ca-5756a440e688" name="更改" comment="完成了FOC代码的基本框架">
+      <change beforePath="$PROJECT_DIR$/.config" beforeDir="false" afterPath="$PROJECT_DIR$/.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.config.old" beforeDir="false" afterPath="$PROJECT_DIR$/.config.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cproject" beforeDir="false" afterPath="$PROJECT_DIR$/.cproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/.rtmenus" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/.rtmenus" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Inc/hpm_encoder.h" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Inc/hpm_encoder.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Inc/hpm_esc.h" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Inc/hpm_esc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Inc/hpm_protect.h" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Inc/hpm_protect.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Inc/hpm_pwm.h" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Inc/hpm_pwm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Inc/hpm_rs485.h" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Inc/hpm_rs485.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Src/hpm_encoder.c" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Src/hpm_encoder.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Src/hpm_esc.c" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Src/hpm_esc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Src/hpm_protect.c" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Src/hpm_protect.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Src/hpm_pwm.c" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Src/hpm_pwm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/drivers/Src/hpm_rs485.c" beforeDir="false" afterPath="$PROJECT_DIR$/drivers/Src/hpm_rs485.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Inc/hpm_clarke.h" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Inc/hpm_clarke.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Inc/hpm_foc.h" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Inc/hpm_foc.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Inc/hpm_motor.h" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Inc/hpm_motor.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Inc/hpm_park.h" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Inc/hpm_park.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Inc/hpm_pid.h" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Inc/hpm_pid.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Inc/hpm_svpwm.h" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Inc/hpm_svpwm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Src/hpm_clarke.c" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Src/hpm_clarke.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Src/hpm_foc.c" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Src/hpm_foc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Src/hpm_motor.c" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Src/hpm_motor.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Src/hpm_park.c" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Src/hpm_park.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Src/hpm_pid.c" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Src/hpm_pid.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/foc/Src/hpm_svpwm.c" beforeDir="false" afterPath="$PROJECT_DIR$/foc/Src/hpm_svpwm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Kconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/Inc/hpm_foc_thread.h" beforeDir="false" afterPath="$PROJECT_DIR$/applications/Inc/hpm_foc_thread.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/Src/hpm_foc_thread.c" beforeDir="false" afterPath="$PROJECT_DIR$/applications/Src/hpm_foc_thread.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rtconfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/rtconfig.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rtconfig_preinc.h" beforeDir="false" afterPath="$PROJECT_DIR$/rtconfig_preinc.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +272,7 @@
       <workItem from="1774177522384" duration="1889000" />
       <workItem from="1774190720146" duration="1645000" />
       <workItem from="1774317874288" duration="7000" />
-      <workItem from="1774318432876" duration="10352000" />
+      <workItem from="1774318432876" duration="12356000" />
     </task>
     <task id="LOCAL-00001" summary="clion开发">
       <option name="closed" value="true" />
@@ -351,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774322893917</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完成了FOC代码的基本框架">
+      <option name="closed" value="true" />
+      <created>1774329403268</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1774329403268</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +366,8 @@
     <MESSAGE value="完成了PWM的创建" />
     <MESSAGE value="完成了整体结构的创建" />
     <MESSAGE value="项目说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="项目说明" />
+    <MESSAGE value="完成了FOC代码的基本框架" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了FOC代码的基本框架" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

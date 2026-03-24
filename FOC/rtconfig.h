@@ -150,6 +150,7 @@
 #define RT_CANSND_MSG_TIMEOUT 100
 #define RT_CAN_NB_TX_FIFO_SIZE 256
 #define RT_USING_ADC
+#define RT_USING_PWM
 #define RT_USING_RTC
 #define RT_USING_SPI
 #define RT_USING_SPI_ISR
@@ -384,6 +385,12 @@
 #define BSP_UART0_RX_BUFSIZE 128
 #define BSP_UART0_TX_BUFSIZE 0
 #define BSP_UART0_IRQ_PRIORITY 1
+#define BSP_USING_SPI
+#define BSP_USING_SPI1
+#define BSP_SPI1_IRQ_PRIORITY 1
+#define BSP_SPI1_USING_SOFT_CS
+#define BSP_SPI1_USING_SINGLE_IO
+#define BSP_USING_PWMV2
 #define BSP_USING_MCAN
 #define BSP_USING_MCAN0
 #define BSP_MCAN0_IRQ_PRIORITY 1
@@ -392,6 +399,7 @@
 #define BSP_USING_ADC
 #define BSP_USING_ADC16
 #define BSP_USING_ADC0
+#define BSP_USING_QEIV2
 /* end of On-chip Peripheral Drivers */
 
 /* HPMicro Interrupt Config */
