@@ -18,7 +18,7 @@ static rt_thread_t foc_thread = RT_NULL;
 /* 模拟 FOC 运行线程 */
 static void foc_thread_entry(void *parameter) {
     /* 1. 初始化外设 */
-    hpm_as5047p_init();
+    hpm_vce2755_init();
     hpm_pwm_foc_init();
 
     /* 2. 初始化 FOC 算法 (极对数假设为 7, 母线电压 24.0V, 请根据实际电机修改) */

@@ -1,6 +1,8 @@
 //
 // Created by 21184 on 2026/3/24.
+// Modified for VCE2755Q (SPI + QEI Fusion)
 //
+
 #include "../Inc/hpm_foc.h"
 #include <math.h>
 #include "../../drivers/Inc/hpm_encoder.h"
@@ -40,20 +42,24 @@ void hpm_foc_step(float ia, float ib, float ic) {
     foc_ctrl.phase_b_current = ib;
     foc_ctrl.phase_c_current = ic;
 
-    /* 1. 读取 AS5047P 角度 */
-    uint16_t raw_angle = hpm_as5047p_read_angle();
-    if (raw_angle != 0xFFFF) {
-        // 14-bit angle 转换为机械角度 (0 ~ 2PI)
-        foc_ctrl.theta_mech = ((float) raw_angle / 16384.0f) * 2.0f * PI;
+    /* 1. 读取 VCE2755Q 的极低延迟 QEI 硬件脉冲计数值
+     * (摒弃了之前耗时的 SPI 读取操作)
+     */
+    uint32_t qei_cnt = hpm_vce2755_get_qei_count();
 
-        // 计算电角度
-        foc_ctrl.theta_elec = foc_ctrl.theta_mech * foc_ctrl.pole_pairs;
+    // 防止溢出，将计数值限制在一圈以内 (例如配置为1024线时，取模 4096)
+    qei_cnt = qei_cnt % QEI_COUNTS_PER_REV;
 
-        // 归一化电角度到 0 ~ 2PI
-        foc_ctrl.theta_elec = fmodf(foc_ctrl.theta_elec, 2.0f * PI);
-        if (foc_ctrl.theta_elec < 0.0f) {
-            foc_ctrl.theta_elec += 2.0f * PI;
-        }
+    // 将 QEI 脉冲数转换为机械角度 (0 ~ 2PI)
+    foc_ctrl.theta_mech = ((float) qei_cnt / (float) QEI_COUNTS_PER_REV) * 2.0f * PI;
+
+    // 计算电角度
+    foc_ctrl.theta_elec = foc_ctrl.theta_mech * foc_ctrl.pole_pairs;
+
+    // 归一化电角度到 0 ~ 2PI
+    foc_ctrl.theta_elec = fmodf(foc_ctrl.theta_elec, 2.0f * PI);
+    if (foc_ctrl.theta_elec < 0.0f) {
+        foc_ctrl.theta_elec += 2.0f * PI;
     }
 
     /* 2. Clarke 变换 (三相静止 -> 两相静止) */

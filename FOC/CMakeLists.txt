@@ -116,6 +116,8 @@ SET(RT_APPLICATIONS_SOURCES
 		drivers/Src/hpm_protect.c
 		drivers/Inc/hpm_protect.h
 		drivers/Src/hpm_esc.c
+		drivers/Inc/hpm_usb.h
+		drivers/Src/hpm_usb.c
 )
 
 SET(RT_BOARD_SOURCES
