@@ -28,21 +28,19 @@ void thread_entry(void *arg);
 
 static void str_to_lower(char *str);
 
-int main(void)
-{
+int main(void) {
     return 0;
 }
 
 
-void thread_entry(void *arg)
-{
+void thread_entry(void *arg) {
     char adc_dev_name[] = BOARD_APP_ADC16_NAME;
     rt_uint32_t round = 0;
     rt_adc_device_t adc_dev;
     rt_uint32_t value, vol;
     rt_err_t ret = RT_EOK;
     str_to_lower(adc_dev_name);
-    adc_dev = (rt_adc_device_t)rt_device_find(adc_dev_name);
+    adc_dev = (rt_adc_device_t) rt_device_find(adc_dev_name);
     if (adc_dev == RT_NULL) {
         rt_kprintf("adc sample run failed! can't find %s device!\n", adc_dev_name);
     }
@@ -76,24 +74,22 @@ void thread_entry(void *arg)
     }
 }
 
-static void str_to_lower(char *str)
-{
+static void str_to_lower(char *str) {
     for (int i = 0; i < strlen(str); i++) {
         str[i] = tolower((unsigned char) str[i]);
     }
 }
 
 
-void monitor_voltage(void)
-{
+void monitor_voltage(void) {
     static bool thread_running = false;
-    if (!thread_running)
-    {
+    if (!thread_running) {
         static uint32_t adc_thread_arg = 0;
         rt_thread_t adc_thread = rt_thread_create("adc_demo", thread_entry, &adc_thread_arg, 1024, 1, 10);
         rt_thread_startup(adc_thread);
         thread_running = true;
     }
 }
+
 /* EXPORT to msh command list */
 MSH_CMD_EXPORT(monitor_voltage, Monitor Pin volatge);

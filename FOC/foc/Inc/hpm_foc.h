@@ -1,5 +1,6 @@
 //
 // Created by 21184 on 2026/3/24.
+// Modified for VCE2755Q (SPI + QEI Fusion)
 //
 
 #ifndef RTTHREAD_HPM_FOC_H
